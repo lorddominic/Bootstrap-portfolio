@@ -1,0 +1,29 @@
+.container{
+    width: 56%;
+}
+.navbar-default .navbar-brand{
+    float: left;
+    color: rgb(233, 34, 34);
+    background-color: teal;
+    padding: 15px;
+}
+.navbar-brand h6{
+    margin: 0;
+    color: white;
+    background-color: teal;
+}
+img{
+    float: left;
+}
+.my-form {
+    margin-left: 0;
+}
+.contact{
+    margin-left:12px;
+}
+.row{
+    margin-bottom: 48px;
+} 
+.col-4{
+    margin-right: -45px;
+}
