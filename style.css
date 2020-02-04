@@ -1,16 +1,24 @@
-.container{
-    width: 56%;
+body{
+    background-color: blanchedalmond;
+    padding: 0;
 }
-.navbar-default .navbar-brand{
+.container{
+    width: 52%;
+    background-color: white;
+    margin-top: 30px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+}
+.navbar-brand{
     float: left;
-    color: rgb(233, 34, 34);
     background-color: teal;
     padding: 15px;
 }
-.navbar-brand h6{
+
+#name-header{
+    color:white;
     margin: 0;
-    color: white;
-    background-color: teal;
+    font-size: 30px;
 }
 img{
     float: left;
@@ -22,8 +30,12 @@ img{
     margin-left:12px;
 }
 .row{
-    margin-bottom: 48px;
+    margin-bottom: 30px;
 } 
 .col-4{
-    margin-right: -45px;
+    margin-right: -10px;
+}
+.btn{
+    color: white;
+    background-color: teal;
 }
