@@ -1,41 +1,53 @@
-body{
+body {
     background-color: blanchedalmond;
     padding: 0;
 }
-.container{
+
+.container {
     width: 52%;
     background-color: white;
     margin-top: 30px;
     /* padding-top: 20px;
     padding-bottom: 20px; */
 }
-.navbar-brand{
+
+.navbar-brand {
     float: left;
     background-color: teal;
     padding: 15px;
 }
 
-#name-header{
-    color:white;
+#name-header {
+    color: white;
     margin: 0;
     font-size: 30px;
 }
-img{
+
+img {
     float: left;
 }
+
 .my-form {
     margin-left: 0;
 }
-.contact{
-    margin-left:12px;
+
+.contact {
+    margin-left: 12px;
 }
-.row{
+
+.row {
     margin-bottom: 30px;
-} 
-.col-4{
+}
+
+.col-4 {
     margin-right: -10px;
 }
-.btn{
+
+.btn {
     color: white;
     background-color: teal;
+}
+
+.list {
+    left: 60px;
 }
