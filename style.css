@@ -1,53 +1,143 @@
+/*added background wallpaper*/
+
 body {
-    background-color: blanchedalmond;
-    padding: 0;
+    background-image: url('https://cdn.pixabay.com/photo/2018/11/08/19/12/wall-3803151__340.jpg');
+    min-height: 100vh;
 }
 
-.container {
-    width: 52%;
-    background-color: white;
-    margin-top: 30px;
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
+p {
+    font-size: 22px;
+    line-height: 1.8em;
 }
 
-.navbar-brand {
-    float: left;
-    background-color: teal;
-    padding: 15px;
+#email {
+    text-align: center;
 }
 
-#name-header {
+.my-name {
     color: white;
-    margin: 0;
-    font-size: 30px;
+    font-size: 34px;
+    padding: 20px;
+    margin-left: -12px;
+    background-color: teal;
+    font-family: sans-serif;
 }
 
-img {
+strong {
+    color: white;
+}
+
+.spacing {
+    border-left: solid;
+    border-right: solid;
+}
+
+.my-container-about {
+    border: 1px solid gray;
+    height: 600px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.my-container {
+    border: 1px solid gray;
+    height: 600px;
+    margin-top: 35px;
+    margin-bottom: 15px;
+    background-color: rgb(247, 245, 245);
+}
+
+h1 {
+    color: teal;
+}
+
+
+/*created a circle image*/
+
+.profile-img {
     float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    shape-outside: circle();
+    margin: 20px 20px 20px 0;
 }
 
-.my-form {
-    margin-left: 0;
+.my-col1 {
+    padding-left: 50px;
+}
+
+.my-col1-2 {
+    background-color: rgb(247, 245, 245);
+}
+
+
+/*changed the button color on the contact form*/
+
+.btn-color {
+    color: white;
+    background-color: teal;
+    border-color: teal;
+}
+
+.my-row1-p {
+    height: 50px;
+}
+
+.portfolio {
+    font-size: 40px;
+    margin-top: 20px;
+    line-height: .8;
+    color: teal;
+}
+
+.about-me {
+    font-size: 40px;
+    margin-top: 20px;
+    line-height: .8;
+    color: teal;
 }
 
 .contact {
-    margin-left: 12px;
+    font-size: 40px;
+    margin-top: 20px;
+    line-height: .8;
+    color: teal;
 }
 
-.row {
-    margin-bottom: 30px;
+
+/*bootstrap footer styling*/
+
+.footer {
+    background-color: #343a40;
+    text-align: center;
+    margin-top: auto;
 }
 
-.col-4 {
-    margin-right: -10px;
+
+/*added media queries for responsiveness*/
+
+@media screen and(max-width: 1200px) {
+    .my-name {
+        margin-left: 5px;
+    }
 }
 
-.btn {
-    color: white;
-    background-color: teal;
+@media screen and(max-width: 992px) {
+    .my-name {
+        margin-left: 5px;
+    }
 }
 
-.list {
-    left: 60px;
+@media screen and(max-width: 768px) {
+    .my-name {
+        margin-left: 5px;
+    }
+}
+
+@media screen and(max-width: 576px) {
+    .my-name {
+        margin-left: 5px;
+    }
 }

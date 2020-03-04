@@ -5,71 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
+    <title>About Me</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <h3 id="name-header" class="navbar-brand text-center myName">
-                <strong>Boyan Xu</strong>
-            </h3>
-            <!-- <a id="name-header" class="navbar-brand text-center" href="#">
-        <h3><strong class="myName">Boyan Xu</strong></h3>
-      </a> -->
-            <!-- <h4><strong class="myName">Boyan Xu</strong></h4> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+    <header>
+        <!--added bootstrap navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand navbar1">
+                    <!--I added my name with a my-name class for css styling-->
+                    <strong class="my-name">Boyan Xu</strong>
+                </a>
+                <!--added the links to the navbar buttons About, Portfolio and Contact-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><br>
+                            <a class="nav-link" href="https://www.linkedin.com/in/dominic-xu-6a37a018b/">
+                                <strong>LinkedIn</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown"></li>
+                        <li class="nav-item"><br>
+                            <a class="nav-link" href="https://github.com/lorddominic">
+                                <strong>GitHub</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item"><br>
+                            <a class="nav-link" href="https://dochub.com/dominictxu1/6g9z3Xv/boyan-resume-pdf">
+                                <strong>Resume</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                Phone# 4808698645<br>
+                                Email: dominictxu1@gmail.com<br>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <strong>About</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown"></li>
+                        <li class="nav-item">
+                            <a class="nav-link spacing" href="portfolio.html">
+                                <strong>Portfolio</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <strong>Contact</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--added a my-container class-->
+        <div class="container my-container-about">
+            <!--Created the proper rows and columns for About Me-->
+            <div class="row">
+                <div class="col-md-12 my-col1">
+                    <div class="col-md-12">
+                        <div class="row-md-12">
+                            <div class="col-md-12">
+                                <h1 class="about-me">About Me</h1>
+                            </div>
+                            <!--added a thematic break for light asthetics and spacing-->
+                            <hr>
+                            <!--Created the rows and columns for profile image and the About Me text-->
+                            <div class="row">
+                                <div class="col-md-12 my-col-i">
+                                    <img src="https://media-exp1.licdn.com/dms/image/C4E03AQGuCHm9hx_lrg/profile-displayphoto-shrink_200_200/0?e=1588809600&v=beta&t=fpmSZNRA285qVaMXwP4l1PCYlthhVsErmDl009JLnxY" class="profile-img img-fluid mt-4 responsive image" alt="profile image">
+                                    <p>
+                                        <!--*change LI to my About Me*-->
+                                        Web Developer and customer oriented management professional with strong people skills. Focuses on customer satisfaction while maintaining productivity. Recently obtained a Full Stack Web Development Certificate from University of Arizona with freshly
+                                        developed skills in HTML, CSS, JavaScript, jQuery and more. I am knowledgeable and dependable, recognized for consistency and productivity. Known for managing a team of Sales Associates in a fast paced environment.
+                                        Maintaining dependability and producing a high level of sales within the company. Motivated by passion and a sense of accomplishment. Desires to gain a high energy position with a notable, thriving agency.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2>About Me</h2>
-                <hr>
-            </div>
+    </main>
+    <!--added a bootstrap sticky footer with an additional class for css styling-->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Copyright ©</span>
         </div>
-        <div class="row">
-            <div class="col">
-                <p>
-                    <img src=https://media.wired.com/photos/5cdefc28b2569892c06b2ae4/master/w_2560%2Cc_limit/Culture-Grumpy-Cat-487386121-2.jpg alt="cat" style="width:170px; height:150px;">
-                    <div class="container">
-                        <ul>
-                            <li>name: Boyan Xu</li>
-                            <li>email: dominictxu1@gmail.com</li>
-                            <li>phone number: 4808698645</li>
-                            <li><a href="https://github.com/lorddominic">GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/in/dominic-xu-6a37a018b/">Linkedin</a></li>
-                        </ul>
-                    </div>
-
-                </p>
-
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat amet voluptatem hic eius cumque mollitia iusto nam nemo. Voluptatem nemo sequi optio aliquam ipsam, enim sit odio rem temporibus voluptates?
-                </p>
-
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam et dolore repellat eos excepturi ratione tempora atque ut sint ipsum, suscipit, at odio error. Vitae nisi sunt a quaerat aut.
-                </p>
-
-            </div>
-        </div>
-
-    </div>
-
+    </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

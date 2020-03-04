@@ -2,72 +2,134 @@
 <html lang="en">
 
 <head>
+    <!--Head element includes charset, viewport, css link, The Title & bootstrap meta & link tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--linked css file-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>My Portfolio</title>
 </head>
 
+<!--Body includes a header, main and a footer-->
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <h3 id="name-header" class="navbar-brand text-center myName">
-                <strong>Boyan Xu</strong>
-            </h3>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-item nav-link" href="index.html">About<span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link active" href="portfolio.html">Portfolio<span
-                            class="sr-only">(current)</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand navbar1" href="#">
+                    <strong class="my-name">Boyan Xu</strong>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><br>
+                            <a class="nav-link" href="https://www.linkedin.com/in/dominic-xu-6a37a018b/">
+                                <strong>LinkedIn</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown"></li>
+                        <li class="nav-item"><br>
+                            <a class="nav-link" href="https://github.com/lorddominic">
+                                <strong>GitHub</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item"><br>
+                            <a class="nav-link" href="https://dochub.com/dominictxu1/6g9z3Xv/boyan-resume-pdf">
+                                <strong>Resume</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                Phone# 480-869-8645<br>
+                                Email: dominictxu1@gmail.com<br>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--added the links to the navbar buttons About, Portfolio and Contact-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                <strong>About</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown"></li>
+                        <li class="nav-item">
+                            <a class="nav-link spacing" href="portfolio.html">
+                                <strong>Portfolio</strong>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                <strong>Contact</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!--I added a container for my Portfolio page column and rows layout-->
+        <div class="container my-container">
+            <!--I added a layout for the portfolio header-->
+            <div class="row justify-content-around my-row1-p">
+                <div class="col-md-12">
+                    <h1 class="portfolio">Portfolio</h1>
+                </div>
+            </div>
+            <!--added a thematic break for light asthetics and spacing-->
+            <hr>
+            <!--added bootstrap rows and columns needed for image spacing and placement-->
+            <div class="row justify-content-around my-row-p">
+                <div class="col-md-3 my-col-p">
+                    <!--added mt-4 to all images for spacing-->
+                    <img src="https://user-images.githubusercontent.com/46208528/75900539-4cce0a00-5dfa-11ea-8bb5-cb4f194074bb.png" class="img-fluid mt-4" alt="Responsive image">
+                    <p><a href="https://lorddominic.github.io/WeatherDashboard/">Weather Dashboard</a></p>
+                    <!--*Still need to make this a row to create a nest row add bg-info(background info). go to bootstrap site, text white ,justify content center ,m-n1 for margin*-->
+                </div>
+
+                <div class="col-md-3 my-col-p">
+                    <img src="https://user-images.githubusercontent.com/46208528/75902230-f0b8b500-5dfc-11ea-850b-10f36c131120.PNG" class="img-fluid mt-4" alt="Responsive image">
+                    <p><a href="https://lorddominic.github.io/Work-Day-Scheduler/">Work Day Scheduler</a></p>
+                </div>
+                <div class="col-md-3 my-col-p">
+                    <img src="https://user-images.githubusercontent.com/46208528/75902730-bd2a5a80-5dfd-11ea-8ff2-b004c007e536.PNG" class="img-fluid mt-4" alt="Responsive image">
+                    <p><a href="https://lorddominic.github.io/CodeQuiz/index.html">Code Quiz</a></p>
+                </div>
+            </div>
+            <!--added line breaks for spacing-->
+            <br></br>
+            <!--added bootstrap rows and columns needed for image spacing and placement-->
+            <div class="row justify-content-around my-row-p">
+                <div class="col-md-3 my-col-p">
+                    <img src="https://user-images.githubusercontent.com/46208528/75903199-7ab54d80-5dfe-11ea-8dab-ad392d263130.PNG" class="img-fluid mt-4" alt="Responsive image">
+                    <p><a href="https://lorddominic.github.io/Template-Engine/">Team member creater</a></p>
+                </div>
+                <div class="col-md-3 my-col-p">
+                    <img src="https://user-images.githubusercontent.com/46208528/75904347-46db2780-5e00-11ea-99c6-a737be16a116.PNG" class="img-fluid mt-4" alt="Responsive image">
+                    <p><a href="https://lorddominic.github.io/grocerEASE/">grocerEASE</a></p>
+                </div>
+                <div class="col-md-3 my-col-p">
+                    <img src="https://user-images.githubusercontent.com/46208528/75903784-51e18800-5dff-11ea-81ca-4e2b025a41b2.PNG" class="img-fluid mt-4" alt="Responsive image">
+                    <p>
+                        <a href="https://lorddominic.github.io/passwordGenerator/">Password Generator</a></p>
                 </div>
             </div>
         </div>
-    </nav>
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h2>Portfolio</h2>
-                <hr>
-            </div>
+    </main>
+    <!--added a bootstrap sticky footer with an additional class for css styling-->
+    <footer class="footer mt-auto py-3 ">
+        <div class="container ">
+            <span class="text-muted ">Copyright ©</span>
         </div>
-
-        <!-- Row2 -->
-        <div class="row">
-            <div class="col-4">
-                <img src="http://placehold.it/200x150" alt="200x150">
-            </div>
-            <div class="col-4">
-                <img src="http://placehold.it/200x150" alt="200x150">
-            </div>
-        </div>
-
-        <!-- Row3 -->
-        <div class="row">
-            <div class="col-4">
-                <img src="http://placehold.it/200x150" alt="200x150">
-            </div>
-            <div class="col-4">
-                <img src="http://placehold.it/200x150" alt="200x150">
-            </div>
-        </div>
-
-        <!-- Row4 when i put col-md-12,didn't work-->
-        <div class="row">
-            <div class="col-4">
-                <img src="http://placehold.it/200x150" alt="200x150">
-            </div>
-        </div>
-    </div>
-
+    </footer>
+    <script src="assets/js/script.js "></script>
 </body>
 
 </html>
